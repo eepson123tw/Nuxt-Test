@@ -1,6 +1,11 @@
 export default defineAppConfig({
   shadcnDocs: {
     site: {
+      umami:{
+        enable: true,
+        src: 'https://umami.shadcn.com/umami.js',
+        dataWebsiteId: '2199c498-99bb-4248-adae-96f3e317e817',
+      },
       name: 'shadcn-docs-nuxt',
       description: 'Beautifully designed Nuxt Content template built with shadcn-vue. Customizable. Compatible. Open Source.',
     },
@@ -58,6 +63,7 @@ export default defineAppConfig({
     search: {
       enable: true,
       inAside: false,
-    }
+    },
+    
   }
 });
